@@ -1,0 +1,879 @@
+html, body{
+    font-family: "Lucida Sans", sans-serif;
+    
+
+}
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+  }
+    
+      #money-align{
+        padding: 0;
+    }
+    
+     #card{
+        height: auto;
+        width: 100%;
+    }
+    
+    
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+    
+    #money-align{
+        padding: 0;
+    }
+      
+    
+     #card{
+        height: auto;
+        width: 100%;
+    }
+    
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn ,header{   
+    width: 100%;
+    padding: 0;
+  }
+    
+      #money-align{
+        padding: 0;
+    }
+    
+    #card{
+        height: auto;
+        width: 100%;
+    }
+    #flex-service{
+        
+    }
+    
+    
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .nav a {
+    float:right;
+    width: 100%;
+  }
+    #money-align{
+        padding: 0;
+    }
+    
+    .flex-item{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+body{
+        margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 32px;
+    color:#281C02;
+    font-family: "Roboto";
+    -webkit-font-smoothing: antialiased;
+}
+header {
+    
+    background-color:#281C02;
+    color: #FFFFFF;
+    padding:0px;
+    border-style: outset;
+    float: left;
+    margin: 0px;
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+    
+    
+}
+
+.navbar-nav{
+    
+     font-weight: bolder;
+    background-image: url(Images/banner.png);
+    background-size: cover;
+    
+   
+}
+
+
+
+header .nav {
+    padding-left:30px;
+    padding-right:60px;
+    padding-top: 7px;
+    
+}
+
+
+.nav-item{
+
+    font-weight:bolder;
+    font-family: sans-serif;
+    margin-right: 10px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+
+a{
+    color: white;
+}
+.div{
+    display: block;
+}
+
+.cell,
+.email,
+.icon {
+    font-size: 12px;
+    text-shadow: 1px 1px 0 #444;
+    margin:5px;
+    color: white;
+    float: none;
+    display:flex;
+}
+
+.icon ::before {
+    font-size: 18px;
+    margin: 7px;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+/*
+.button {
+    position: relative;
+    background-color: teal;
+    border: solid 2px;
+    font-size: 15px;
+    border-style: groove;
+    color: #FFFFFF;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: -30px;
+}
+
+.button:after #apply{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after #apply{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+*/
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0px;
+
+    overflow: hidden;
+   
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+    color: white;
+}
+
+li a {
+    display:inline-flex;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: gray;
+    color: white;
+}
+
+li a:active {
+background-color: beige;
+
+}
+
+
+.carousel-caption,carousel-indicators{
+
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding-right: 10px;
+    margin: 10px;
+   
+}
+
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    
+    justify-content: center;
+   
+}
+.flex-item{
+     border: outset 10px teal;
+     background-color: #f1f1f1;
+    margin: 10px;
+    padding: 30px;
+    line-height:30px;
+    top:-520s;
+    font-size: 15px;
+    color: black;
+    float:none;
+    text-align: center;
+    width: 400px;
+    height: 520px;
+   /* overflow: scroll;*/
+    
+          
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94) 0s;
+    /*transition-property: width;
+   // transition-duration: 2s;
+   transition-timing-function: linear;
+   // transition-delay: 0s;*/
+    transition: 1s;
+    }
+    
+
+.flex-item:hover{
+    background-color:cadetblue;
+   /* //-webkit-animation-name:fadeIn;
+    //animation-name: fadeIn;
+    //transition: 'opacity 1s linear';
+   // opacity: inherit;*/
+    transition: 1s;
+    top:0;
+    
+   
+    
+    
+}
+footer{
+    padding-top: 120px;
+    background-color:#281C02;
+    font-size: 15px;
+}
+
+::after ::before{
+    box-sizing: border-box;
+}
+
+#more {display: none;}
+
+/*about us*/
+
+
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.col {
+  float: none;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+    
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+    /*overflow: scroll;*/
+    height: auto;
+    
+    
+    
+    
+}
+
+
+/*--------------------------
+sub Navigation bar
+-------------------------------*/
+/* The navigation menu */
+.navbar-nav {
+  overflow:hidden;
+  background-color: #333;
+    padding-left: 30px;
+    padding-right: 20px;
+    
+
+
+}
+
+/* Navigation links */
+.navbar-nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+    padding: 16px 14px;
+  text-align: center;
+  
+  text-decoration:none;
+}
+.subnav {
+  float: none;
+  overflow:hidden;
+    
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin:0px;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display:none;
+  position:absolute;
+  left:50%;
+  background-color: red;
+  width:50%;
+  z-index:0;
+}
+
+.subnav-content a {
+  float:right;
+  color: white;
+    display:g
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display:block;
+;
+}
+
+
+.card-body li:hover{
+    color: white;
+}
+
+#postit { 
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-image: url('https://www.101computing.net/wp/wp-content/uploads/post-it.jpg');
+ }
+
+#message {
+  text-align: center;
+  padding: 50px 50px 50px 50px;
+  color: #C40808;
+  font-family: Trebuchet MS;
+  font-size: 20px;
+}
+
+#card{
+    height:350px;
+    
+}
+
+.card:hover{
+    transition-timing-function:linear;
+     background-color:darkslategray;
+    color:white;
+   /* //-webkit-animation-name:fadeIn;
+    //animation-name: fadeIn;
+    //transition: 'opacity 1s linear';
+   // opacity: inherit;*/
+    transition: 1s;
+    top:0;
+    
+    
+}
+h2,i{
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.about-section{
+  padding: 50px;
+  text-align: center;
+  background-color:#281C02;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+    
+
+
+}
+
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+    
+    
+
+}
+
+.title {
+  color: grey;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+      padding-left:400px;
+  }
+    #money-align{
+        padding: 0px;
+    }
+    
+    
+}
+
+/*contact us */
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+font-style: bold;
+    margin: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: teal;
+}
+
+/* Style the container/contact section */
+.container{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+
+}
+
+/* Create two columns that float next to eachother */
+.column{
+  float: none;
+  flex: 50%;
+  margin-top: 10px;
+  padding: 10px;
+    flex-wrap: wrap;
+    
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.service1{
+    border-radius: 8px;
+    
+}
+
+
+.flex{
+    
+    flex-wrap: wrap;
+    width: 450px;
+    align-content: center;
+    height: 450px;
+    text-align:justify;
+    font-size: 12px;
+    font-family:sans-serif;
+    padding: 10px;
+    
+    
+    
+}
+.fa:hover{
+    opacity:0.5;
+    color:black;
+    
+}
+
+.flex:hover{
+    transition-timing-function:linear;
+     background-color:cadetblue;
+   /* //-webkit-animation-name:fadeIn;
+    //animation-name: fadeIn;
+    //transition: 'opacity 1s linear';
+   // opacity: inherit;*/
+    transition: 1s;
+    top:0;
+}
+
+
+#asset {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0;
+  margin-left: 40px;
+margin-right: 40px;
+    align-items: center;
+      
+}
+
+
+
+#asset img {
+  float:none;
+  margin: 0px;
+  border-radius: 50%;
+    
+}
+
+
+.flex-img{
+    display: flex;
+    flex-wrap: wrap;
+    padding:8px;
+    
+    
+     
+}
+
+.carousel-item{
+    transition: 2s;
+    
+}
+.flex-img:hover{
+    transform: scale(1.2)
+}
+@media (max-width: 500px) {
+#asset {
+      text-align: center;
+    }
+#asset img {
+      margin: auto;
+      float:left;
+      display:flex;
+   
+  }
+    
+    .flex{
+        width: 100%;
+        height: auto;
+    }
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) and orientation(landscape) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+      height: auto;
+  }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+    }
+    
+    #money-align{
+        padding: 0px;
+    }
+}
+
+/*--------------------------
+servicing section collapse
+---------------------------*/
+.collapsible {
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: black;
+    color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  text-align: left;
+  
+}
+
+/*-------------------------------------------
+Service section css
+---------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.services-section{
+  background: url(Images/bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #82ccdd;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+
+
+.content dl{
+    color:black;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    
+}
+
+/*--------------------
+Get quote form
+----------------------*/
+ /* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+} 
